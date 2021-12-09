@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fairy House Mother</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />		
+	</head>
+
+	<body class="is-preload">
+		<h2><img src="images/FairyHouseMother.png" alt="Fairy House Mother Image" class="responsive"></h2>	
+	  	<div class="column"><img src="images/Saunya.jpg" alt="Saunya" class="responsive"></div>
+	  	<div class="column1"><p><h3>Hello, I’m Saunya!</h3><br>
+
+			Recently I was in need of a house sitter and discovered my options were limited so I decided to fill a void in my community. I am offering house sitting services for the Grand Falls, New Brunswick area and within a 100kms radius. I am willing to travel wherever I am needed outside of area for a fee. I am ecstatic to start this new adventure with you.<br><br>
+
+			Note: For the vulnerable population who needs to know for their own safety, I have both doses of the COVID vaccine.<br><br>
+
+			Services:<br>
+			While watching your home and taking care of your furchildren, I will love them like they are my own. I will spend all day showering them with affection and follow any instructions you have for their care (if any). I have 25+ years of animal handling. Types of animals I have experience with are dogs, cats, caged rodents, fish, and reptiles.<br>
+			Are you not able to travel with your children or would you like an adult only vacation? I can also take care of your children for you so you don’t need to worry about additional child care. I will be taking full responsibility for the health and welfare of your children while you are away. The days will be spent with child-focused activities.  I have over 20 years child care experience as well as raising my own children. I have a diploma in Early Childhood Education and up to date First Aid training.<br><br>
+
+			During my time in your home while taking care of the beings you treasure more than anything, I will also provide light housekeeping and yard care if needed.<br><br>
+
+			Rates:<br>
+			Getting to know you meet and greets: Free<br><br>
+
+			House sitting with or without indoor animals<br>
+			$60 for 12 hour intervals<br>
+			$80 for 24 hour intervals<br><br>
+			House sitting with children in addition to previous rates:<br>
+			Each child under the age of 4 is $40 a day<br>
+			Each child 4 and over is $25 a day<br><br>
+
+			Willing to travel outside of service area for an additional $0.75 per mile 
+
+	</p></div>
+	</div>
+	</body>		
+	<section id="footer">
+		<div class="inner">
+			<h2 class="major">Get in touch</h2>
+			<p>If you would like to contact me for more information, please send me an email to saunyahousemother@gmail.com or through my Facebook page </p>
+			<form method="GET" action="mailto:saunyahousemother@gmail.com" enctype="text/plain">
+			    <div>Subject</div>
+			    <input type="text" name="subject" />
+
+			    <div>Name</div>
+			    <input name="Name" />
+
+			    <div>E-Mail</div>
+			    <input name="E-Mail Address" />
+
+			    <div>Message</div>
+			    <textarea name="Message"></textarea>
+
+			    <br/>
+			    <input type="submit" value="Send" />
+
+			    <input type="hidden" name="body" />
+			</form>
+
+			
+			<ul class="contact">
+				<li class="icon solid fa-envelope"><p>saunyahousemother@gmail.com</p></li>
+				<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/YourFairyHouseMother" target="_blank">https://www.facebook.com/YourFairyHouseMother</a></li>							
+			</ul>							
+		</div>
+	</section>
+</html>
+
+<script>
+   var form = document.getElementsByTagName('form')[0];
+   form.addEventListener('submit',contact,false);
+   function contact(e) {
+      // Prevent Default Form Submission
+      e.preventDefault();
+
+      var target = e.target || e.srcElement;
+      var i = 0;
+      var message = '';
+
+      // Loop Through All Input Fields
+      for(i = 0; i < target.length; ++i) {
+         // Check to make sure it's a value. Don't need to include Buttons
+         if(target[i].type != 'text' && target[i].type != 'textarea') {
+                // Skip to next input since this one doesn't match our rules
+            continue;
+         }
+
+         // Add Input Name and value followed by a line break
+         message += target[i].name + ': ' + target[i].value + "\r\n";
+      }
+      // Modify the hidden body input field that is required for the mailto: scheme
+      target.elements["body"].value = message;
+
+      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+      this.submit();
+   }
+</script>
